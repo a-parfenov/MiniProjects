@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Страница контактов</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+<div class="container mt-5">
+    <h1>Контакты</h1>
+</div>
+
+<div class="container mt-5 mb-5">
+    <form>
+        <input type="text" placeholder="Введите имя" class="form-control"><br>
+        <input type="text" placeholder="Введите email" class="form-control"><br>
+        <input type="text" placeholder="Тема сообщения" class="form-control"><br>
+        <textarea class="form-control" placeholder="Введите сообщение"></textarea><br>
+        <button class="btn btn-success">Отправить</button>
+    </form>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+
+</body>
+</html>
