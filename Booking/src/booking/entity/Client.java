@@ -1,18 +1,18 @@
-package booking;
+package booking.entity;
 
 public class Client {
     private String name;
     private String surname;
     private String mobile;
     private String email;
-    private Bill bill;
+    private final Bill billClient;
 
     public Client(String name, String surname, String mobile, String email, Bill bill) {
         this.name = name;
         this.surname = surname;
         this.mobile = mobile;
         this.email = email;
-        this.bill = bill;
+        this.billClient = bill;
     }
 
     public String getName() {
@@ -47,11 +47,8 @@ public class Client {
         this.email = email;
     }
 
-    public Bill getBill() {
-        return bill;
+    public Bill getBillClient() {
+        return billClient;
     }
 
-    public void setBill(Bill bill) {
-        this.bill = bill;
-    }
 }

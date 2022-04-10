@@ -1,4 +1,4 @@
-package booking;
+package booking.entity;
 
 public class Bill {
     private int bill;

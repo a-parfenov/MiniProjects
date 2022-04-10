@@ -1,15 +1,20 @@
-package booking;
+package booking.entity;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Hotel {
     private String nameHotel;
-    private List<Room> listOfRooms;
+    private final ArrayList<Room> listOfRooms;
+    private final Bill billHotel;
 
-    public Hotel(String nameHotel, List<Room> listOfRooms) {
+    public Bill getBillHotel() {
+        return billHotel;
+    }
+
+    public Hotel(String nameHotel, ArrayList<Room> listOfRooms, Bill billHotel) {
         this.nameHotel = nameHotel;
         this.listOfRooms = listOfRooms;
+        this.billHotel = billHotel;
     }
 
     public String getNameHotel() {
@@ -20,11 +25,8 @@ public class Hotel {
         this.nameHotel = nameHotel;
     }
 
-    public List<Room> getListOfRooms() {
+    public ArrayList<Room>  getListOfRooms() {
         return listOfRooms;
     }
 
-    public void setListOfRooms(List<Room> listOfRooms) {
-        this.listOfRooms = listOfRooms;
-    }
 }
