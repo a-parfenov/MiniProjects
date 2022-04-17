@@ -4,4 +4,3 @@
 
     ✅ Интерпретатор на язык BrainFuck
     ✅ Блог сайта (Spring Boot, MySQL, Maven)
-
